@@ -1,1 +1,2 @@
-Prompt Architectures Workshop
+# llm-data-analysis
+Leverage Amazon Bedrock LLMs for data analysis
