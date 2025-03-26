@@ -1,6 +1,6 @@
-# Adavnced Prompt Engineering Workshop
+# Advanced Prompt Engineering Workshop
 
-Welcome to the Adavnced Prompt Engineering Workshop. Follow these instructions as part of an AWS organized event:
+Welcome to the Advanced Prompt Engineering Workshop. Follow these instructions as part of an AWS organized event:
 
 ## Step 1- Workshop Studio AWS Account access
 For this workshop you’ll get access to a temporary AWS Account already pre-configured for you.
