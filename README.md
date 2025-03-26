@@ -40,6 +40,7 @@ Next we allow access to the relevant language models available as part of Amazon
 - Claude 3 Sonnet
 - Claude 3 Haiku
 - Mistral Large
+- Mistral 7B Instruct
 
 
 ## Step 3 - Amazon SageMaker Studio Access
