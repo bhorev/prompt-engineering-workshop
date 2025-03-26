@@ -1,59 +1,81 @@
-# Welcome to Anthropic's Prompt Engineering Interactive Tutorial - Bedrock Edition
+# Workshop Setup - AWS Event
 
-## Course introduction and goals
 
-This course is intended to provide you with a comprehensive step-by-step understanding of how to engineer optimal prompts within Claude, using Bedrock.
+## Step 1- Workshop Studio AWS Account access
+For this workshop you’ll get access to a temporary AWS Account already pre-configured for you.
 
-**After completing this course, you will be able to**:
-- Master the basic structure of a good prompt 
-- Recognize common failure modes and learn the '80/20' techniques to address them
-- Understand Claude's strengths and weaknesses
-- Build strong prompts from scratch for common use cases
-- Use advanced techniques that leverage Claude's tool use / function calling capabilities
-- Use Claude's multimodal Vision capabilites
+1. Obtain the event access code from the instructor.
+   - Your Access Code is: **060f-07ec80-e0**
 
-## Course structure and content
+2. Sign in via the Workshop Studio join url: https://catalog.us-east-1.prod.workshops.aws/join?access-code=060f-07ec80-e0
 
-This course is structured to allow you many chances to practice writing and troubleshooting prompts yourself. The course is broken up into **9 chapters with accompanying exercises**, as well as an appendix of even more advanced methods. It is intended for you to **work through the course in chapter order**. 
+![image](https://github.com/user-attachments/assets/ee3a5977-34e0-4c50-bc63-0ea377624be3)
+![image](https://github.com/user-attachments/assets/92cba8d6-2b6d-4741-bc3c-34ccf432501d)
 
-**Each lesson has an "Example Playground" area** at the bottom where you are free to experiment with the examples in the lesson and see for yourself how changing prompts can change Claude's responses.
+3. Review the terms and conditions associated with this event, and then click **Join event**.
 
-Note: This tutorial uses our smallest, fastest, and cheapest model, Claude 3 Haiku. Anthropic has [two other models](https://aws.amazon.com/bedrock/claude/), Claude 3 Sonnet and Claude 3 Opus, which are more intelligent than Haiku, with Opus being the most intelligent.
+![image](https://github.com/user-attachments/assets/633149ff-f19e-4fa1-bbf4-362ce2bf8141)
 
-When you are ready to begin, go to `00_Tutorial_How-To` to proceed.
+4. After joining the event, you should see the page with event information and workshop details. You should also see a section titled AWS account access in the left navigation bar.
 
-## Table of Contents
+5. Click on **Open AWS console**. This will open the AWS Management Console home page. 
 
-Each chapter consists of a lesson and a set of exercises.
+6. Do not change the AWS region, keep it as the default (us-west-2).
 
-### Beginner
-- **Chapter 1:** Basic Prompt Structure
+7. Note: The AWS account will only be available for the duration of this workshop. Backup any material you wish to keep.
 
-- **Chapter 2:** Being Clear and Direct  
 
-- **Chapter 3:** Assigning Roles
+## Step 2 - Configure Bedrock Model Access
+Next we allow access to the relevant language models available as part of Amazon Bedrock.
 
-### Intermediate 
-- **Chapter 4:** Separating Data from Instructions
+1. On AWS Console, Use the search bar to navigate to Amazon Bedrock
 
-- **Chapter 5:** Formatting Output & Speaking for Claude
+![image](https://github.com/user-attachments/assets/5f5a3c0e-4f78-493e-8505-26e74e5b7e26)
 
-- **Chapter 6:** Precognition (Thinking Step by Step)
+2. Within Amazon Bedrock, on left menu, click on **Model Access**
 
-- **Chapter 7:** Using Examples
+![image](https://github.com/user-attachments/assets/1733a972-f31d-4a83-9849-f894ba9bcf6d)
 
-### Advanced
-- **Chapter 8:** Avoiding Hallucinations
+3. On the model access screen, select only following models and click on "Next" button followed by "Submit":
 
-- **Chapter 9:** Building Complex Prompts (Industry Use Cases)
-  - Complex Prompts from Scratch - Chatbot
-  - Complex Prompts for Legal Services
-  - **Exercise:** Complex Prompts for Financial Services
-  - **Exercise:** Complex Prompts for Coding
-  - Congratulations & Next Steps
+- Claude 3 Sonnet
+- Claude 3 Haiku
+- Mistral Large
 
-- **Appendix:** Beyond Standard Prompting
-  - Chaining Prompts
-  - Tool Use
-  - Vision
-  - Search & Retrieval
+
+## Step 3 - Amazon SageMaker Studio Access
+Amazon SageMaker Studio is a web-based, integrated development environment (IDE) for machine learning. We will use JupyterLab for browsing and executing Python code.
+
+1. Inside AWS Management Console, under Services search for Amazon SageMaker AI and Click on it
+
+![image](https://github.com/user-attachments/assets/7099c9ae-d2b5-44f1-8ec4-52eb27340245)
+
+2. On the left side navigation, click on the **Notebook**, select **Notebook instances**
+
+3. A SageMaker Studio Notebook instance called _PromptEngWithAnthropicNotebook_ should already be provisioned. Click on **Open JupyterLab* (on the right side of the Actions column).
+
+![image](https://github.com/user-attachments/assets/f3473ec3-4b1e-42a3-81be-904f22b7ccc2)
+
+
+## Step 4 - Clone the Code and Start Working
+
+1. Navigate to the root of the file system:
+   ![image](https://github.com/user-attachments/assets/d704ca8a-62e3-4634-bdc7-ffdba60efd9e)
+
+2. Click the Git icon and click on **Clone Repository**:
+   ![image](https://github.com/user-attachments/assets/0466a45f-6b82-4ee9-89f5-59ed60757101)
+
+Paste the repository URL and click on **Clone**:
+```
+https://github.com/bhorev/prompt-engineering-workshop
+```
+![image](https://github.com/user-attachments/assets/20b6b480-4791-4f9e-9877-143c3a8cf4a4)
+
+3. Open the first notebook - **00_Tutorial_How-To.ipynb**
+4. When opening a notebook you will be prompted to select a kernel. Keep the default (conda_python3).
+   ![image](https://github.com/user-attachments/assets/8c51bcec-0e0f-4cc7-b5e4-08504f8aa14c)
+
+5. Note: To execute a Jupyter notebook cell click on Shift+Enter or the Play button
+
+> [!NOTE]
+> If this is an AWS event, Stop here, You are ready!
