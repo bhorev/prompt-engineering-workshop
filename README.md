@@ -1,5 +1,6 @@
-# Workshop Setup - AWS Event
+# Adavnced Prompt Engineering Workshop
 
+Welcome to the Adavnced Prompt Engineering Workshop. Follow these instructions as part of an AWS organized event:
 
 ## Step 1- Workshop Studio AWS Account access
 For this workshop you’ll get access to a temporary AWS Account already pre-configured for you.
@@ -25,7 +26,7 @@ For this workshop you’ll get access to a temporary AWS Account already pre-con
 7. Note: The AWS account will only be available for the duration of this workshop. Backup any material you wish to keep.
 
 
-## Step 2 - Configure Bedrock Model Access
+## Step 2 - Configure Amazon Bedrock Model Access
 Next we allow access to the relevant language models available as part of Amazon Bedrock.
 
 1. On AWS Console, Use the search bar to navigate to Amazon Bedrock
